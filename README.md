@@ -12,7 +12,10 @@ Pipeline de observabilidade de nível enterprise para monitoramento contínuo de
 ## 🏗️ Arquitetura da Solução
 
 ```text
-[ Servidor Windows ] ──(Porta 9182/metrics)──> [ Prometheus ] ──(PromQL)──> [ Grafana ] ──(Webhook POST)──> [ UltraMsg / WhatsApp ]
+[ Servidor Windows ] ──(Porta 9182/metrics)──>
+ [ Prometheus ] ──(PromQL)──>
+ [ Grafana ] ──(Webhook POST)──>
+ [ UltraMsg / WhatsApp ]
 
 ```
 
