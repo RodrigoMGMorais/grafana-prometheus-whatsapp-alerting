@@ -42,5 +42,36 @@ scrape_configs:
     static_configs:
       - targets: ['host.docker.internal:9182']
         labels:
+
+---
+3. Arquivo docker-compose.yml
+Crie um arquivo chamado docker-compose.yml para disponibilizar a infraestrutura pronta:
+
+YAML
+version: '3.8'
+
+services:
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    restart: always
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    depends_on:
+      - prometheus
+
           environment: 'production'
           os: 'windows'
