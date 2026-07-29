@@ -2,7 +2,9 @@
 ```markdown
 # 🚀 Windows Observability & Real-Time WhatsApp Alerting Stack
 
-Pipeline de observabilidade de nível enterprise para monitoramento contínuo de servidores e hosts Windows. A arquitetura coleta métricas de sistema em tempo real via **Windows Exporter**, processa e armazena no **Prometheus**, exibe gráficos dinâmicos no **Grafana** e dispara alertas críticos instantâneos diretamente no celular via **Webhook (WhatsApp API / UltraMsg)**.
+Pipeline de observabilidade de nível enterprise para monitoramento contínuo de servidores e hosts Windows.
+A arquitetura coleta métricas de sistema em tempo real via **Windows Exporter**, processa e armazena no **Prometheus**,
+exibe gráficos dinâmicos no **Grafana** e dispara alertas críticos instantâneos diretamente no celular via **Webhook (WhatsApp API / UltraMsg)**.
 
 ---
 
