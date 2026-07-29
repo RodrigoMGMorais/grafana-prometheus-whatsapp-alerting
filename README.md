@@ -156,7 +156,18 @@ Pipeline de observabilidade de nível enterprise para monitoramento contínuo de
 ## 🏗️ Arquitetura da Solução
 
 ```text
-[ Servidor Windows ] ──(Porta 9182/metrics)──> [ Prometheus ] ──(PromQL)──> [ Grafana ] ──(Webhook POST)──> [ UltraMsg / WhatsApp ]
+[ Servidor Windows ] ──(Porta 9182/metrics)──>
+[ Prometheus ] ──(PromQL)──>
+[ Grafana ] ──(Webhook POST)──>
+[ UltraMsg / WhatsApp ]
+
+windows-observability-stack/
+│
+├── README.md                 # A documentação completa (que acabamos de criar)
+├── prometheus.yml            # O arquivo de configuração do Prometheus
+├── docker-compose.yml        # (Opcional) Para subir Prometheus + Grafana com 1 comando
+└── dashboards/
+    └── windows-exporter.json # O backup/export em JSON do seu Dashboard do Grafana
 
 ---
 
