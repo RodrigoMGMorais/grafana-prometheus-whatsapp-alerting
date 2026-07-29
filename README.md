@@ -1,6 +1,3 @@
-Aqui está o código Markdown **único e completo**.
-
-Basta você clicar no botão **"Copiar"** (no canto superior direito do bloco abaixo) e colar direto dentro do arquivo `README.md` no seu GitHub:
 
 ```markdown
 # 🚀 Windows Observability & Real-Time WhatsApp Alerting Stack
