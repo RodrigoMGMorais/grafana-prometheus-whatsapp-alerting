@@ -137,6 +137,29 @@ Para evitar erros de carregamento (`N/A` ou `No Data`) nos painéis do Grafana:
 
 ---
 
+# 🚀 Windows Observability & Real-Time WhatsApp Alerting Stack
+
+Pipeline de observabilidade de nível enterprise para monitoramento contínuo de servidores e hosts Windows. A arquitetura coleta métricas de sistema em tempo real via **Windows Exporter**, processa e armazena no **Prometheus**, exibe gráficos dinâmicos no **Grafana** e dispara alertas críticos instantâneos diretamente no celular via **Webhook (WhatsApp API / UltraMsg)**.
+
+---
+
+## 🔗 Links e Recursos Oficiais
+
+* **Windows Exporter (Releases):** [https://github.com/prometheus-community/windows_exporter/releases](https://github.com/prometheus-community/windows_exporter/releases)
+* **Prometheus Official Docs:** [https://prometheus.io/docs/introduction/overview/](https://prometheus.io/docs/introduction/overview/)
+* **Grafana Alerting Docs:** [https://grafana.com/docs/grafana/latest/alerting/](https://grafana.com/docs/grafana/latest/alerting/)
+* **UltraMsg (WhatsApp API):** [https://ultramsg.com/](https://ultramsg.com/)
+* **Dashboard Template (Grafana Labs #14518):** [https://grafana.com/grafana/dashboards/14518-windows-exporter-dashboard/](https://grafana.com/grafana/dashboards/14518-windows-exporter-dashboard/)
+
+---
+
+## 🏗️ Arquitetura da Solução
+
+```text
+[ Servidor Windows ] ──(Porta 9182/metrics)──> [ Prometheus ] ──(PromQL)──> [ Grafana ] ──(Webhook POST)──> [ UltraMsg / WhatsApp ]
+
+---
+
 ## ✒️ Autor
 
 Desenvolvido por **Rodrigo de Morais**
