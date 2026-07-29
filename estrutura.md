@@ -1,7 +1,7 @@
 .
-├── docker-compose.yml   # Stack em container (Prometheus + Grafana)
-├── prometheus.yml       # Configuração de Jobs e Scrape
-└── README.md            # Documentação técnica completa
+├── docker-compose.yml   # Stack em container (Prometheus + Grafana)<br>
+├── prometheus.yml       # Configuração de Jobs e Scrape<br>
+└── README.md            # Documentação técnica completa<br>
 
 ---
 🛠️ Tecnologias UtilizadasMétrica / Coletor: windows_exporter (v0.25+)Time Series Database: PrometheusVisualização & Engine de Alertas: GrafanaGateway de Mensagens: UltraMsg (WhatsApp Webhook API)Ambiente: Windows / Docker📑 Passo a Passo de Configuração1. Coleta de Métricas (Windows Exporter)Faça o download do executável ou instalador MSI no repositório oficial:https://github.com/prometheus-community/windows_exporter/releasesExecute o serviço no host Windows.Para validar a exposição dos coletores e métricas do sistema operacional, abra o navegador e acesse:Plaintexthttp://localhost:9182/metrics
