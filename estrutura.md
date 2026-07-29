@@ -1,4 +1,4 @@
-.
+
 ├── docker-compose.yml   # Stack em container (Prometheus + Grafana)<br>
 ├── prometheus.yml       # Configuração de Jobs e Scrape<br>
 └── README.md            # Documentação técnica completa<br>
